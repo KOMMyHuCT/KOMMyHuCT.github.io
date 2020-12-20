@@ -1,0 +1,154 @@
+@font-face {
+	font-family: ClassicaOne;
+	src: url("fonts/Classica One.ttf");
+}
+
+#canvas {
+	display: none;
+}
+
+html {
+	width: 100%;
+	height: 100vh;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	font-family: ClassicaOne;
+	color: #262262;
+	font-weight: bold;
+	background-color: #FDEFE2;
+}
+
+input, textarea {
+	border: 1px solid #262262;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 24px;
+	font-style: italic;
+	font-weight: normal;
+}
+
+#container {
+	width: 1300px;
+	padding-top: 40px;
+	background-color: #FDEFE2;
+}
+
+header {
+	margin: 50px 0 50px 0;
+	position: relative;
+	text-align: center;
+}
+
+header h1 {
+	margin: 0;
+	font-size: 64px;
+	line-height: 1.5;
+}
+
+header img {
+	width: 150px;
+	height: auto;
+	position: absolute;
+	top: -30px;
+	right: 228px;
+}
+
+form {
+
+}
+
+#info {
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: start;
+	font-size: 32px;
+}
+
+#info #inputs {
+	box-sizing: border-box;
+	width: 50%;
+	padding-right: 50px;
+	text-align: right;
+}
+
+#info #inputs label {
+	display: block;
+}
+
+#info #inputs label input {
+	padding: 6px 12px;
+	margin: 0;
+}
+
+#info #static
+{
+	box-sizing: border-box;
+	width: 50%;
+	padding-left: 50px;
+}
+
+#info #static pre {
+	margin: 0;
+	font: inherit;
+}
+
+#info #static pre:last-child {
+	position: relative;
+	left: 130px;
+	text-indent: -130px;
+	line-height: 2.1;
+}
+
+#info #static pre:last-child::first-line {
+	line-height: normal;
+}
+
+#letter {
+	width: 100%;
+	padding: 50px 0;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: start;
+	align-items: center;
+}
+
+#letter textarea {
+	box-sizing: border-box;
+	width: 900px;
+	height: 700px;
+	padding: 50px 100px;
+	resize: none;
+}
+
+#letter input[type="email"] {
+	padding: 6px 12px;
+	margin: 40px 0 40px;
+	position: relative;
+	left: -300px;
+}
+
+#letter input[type="submit"] {
+	width: 300px;
+	height: 90px;
+	border: none;
+	border-radius: 36px;
+	font-family: arial;
+	font-size: 32px;
+	color: white;
+	font-style: normal;
+	font-weight: bold;
+	background-color: #ed1c32;
+}
+
+#letter input[type="submit"]:hover {
+	cursor: pointer;
+}

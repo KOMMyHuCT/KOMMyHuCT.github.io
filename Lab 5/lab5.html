@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="lab5.css">
+<title>Lab 5</title>
+<script src="jspdf.debug.js"></script>
+</head>
+<body>
+	<canvas id="canvas" height="40px" width="1050px"></canvas>
+	<div id="container">
+		<header>
+			<h1>Дорогой<br>Дедушка Мороз!</h1>
+			<img src="img/stamp.png" alt="">
+		</header>
+		<form action="">
+			<div id="info">
+				<div id="inputs">
+					<label>Меня зовут: <input id="input_name" type="text" name="name" placeholder="Введите Ваше имя"></label>
+					<label>Мой город:  <input id="input_city" type="text" name="city" placeholder="Введите Ваш город"></label>
+					<label>Мне: <input id="input_age" type="text" name="age" placeholder="Сколько Вам лет"></label>
+				</div>
+				<div id="static">
+					<pre>Кому:   Деду Морозу</pre>
+					<pre>Куда:   162340, Россия,<br>Вологодская область,<br>город Великий Устюг,<br>дом Деда Мороза</pre>
+				</div>
+			</div>
+			<div id="letter">
+				<textarea id="textarea_letter" name="letter" placeholder="Напишите письмо Деду Морозу"></textarea>
+				<input id="input_email" type="email" name="email" placeholder="Ваш E-mail">
+				<input type="submit" value="ОТПРАВИТЬ">
+			</div>
+		</form>
+	</div>
+	<script src="lab5.js"></script>
+</body>
+</html>
